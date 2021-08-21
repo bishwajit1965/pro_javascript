@@ -40,8 +40,8 @@
                                 var person = {
                                     firstName : ' ',
                                     lastName: ' ',
-                                    set data (value) {
-                                        this.firstName = value.toUpperCase();
+                                    set data (dataValue) {
+                                        this.firstName = dataValue.toUpperCase();
                                     }
                                 };
                                 person.data = 'Arpita';

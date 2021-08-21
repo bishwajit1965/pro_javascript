@@ -19,7 +19,7 @@
                             <p id="demo"></p>
 
                             <script>
-                            var nrson = {
+                            var person = {
                               fullName: function() {
                                 return this.firstName + " " + this.lastName;
                               }

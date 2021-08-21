@@ -21,7 +21,9 @@
                         ?>
                         <h2 class="heading">Object Constructor</h2>
                         <h4 id="demo"></h4>
+                        <p id="error"></p>
                         <script>
+                            try {
                             // Create constructor
                             function Person(first, last, age, eye, education, country) {
                                 this.firstName = first;
@@ -33,7 +35,7 @@
                                 this.country = country;
                                 // Using function
                                 this.name = function () {
-                                    return this.firstName + this.lastName + ' lives in ' + sthis.country;
+                                    return this.firstName + this.lastName + ' lives in ' + this.country;
                                 }
                             }
                             // Use of prototype 
@@ -44,7 +46,13 @@
 
                             var MyDaughter = new Person("Arpita", "Paul", 23, "black", "student of Barishal University", "Bangladesh");
 
-                            document.getElementById("demo").innerHTML = "My daughter\'s age is " + MyDaughter.age + "." + ' She has ' + MyDaughter.eyeColor + ' eyes.' + ' she is a ' + MyDaughter.education + ' ' + ' and she is studying in ' + MyDaughter.subject + ' . '+ MyDaughter.name() + ' and she is a ' + MyDaughter.nationality + ' by birth.' + " She is " + MyDaughter.maritalStatus +'.' + "Shec is very " + MyDaughter.bonding +' to me .'+ " I " + MyDaughter.myReaction;
+                            document.getElementById("demo").innerHTML = "My daughter\'s age is " + MyDaughter.age + "." + ' She has ' + MyDaughter.eyeColor + ' eyes.' + ' she is a ' + MyDaughter.education + ' ' + ' and she is studying in ' + MyDaughter.subject + ' . '+ MyDaughter.name() + ' and she is a ' + MyDaughter.nationality + ' by birth.' + " She is " + MyDaughter.maritalStatus +'.' + "Shec is very " + MyDaughter.bonding +' to me .'+ " I " + MyDaughter.myReaction + ' ' +  MyDaughter.name();    
+                            } catch(e) {
+                                document.getElementById("error").innerHTML=e;
+                                // statements
+                                console.log(e);
+                            }
+                            
                         </script>
                         <?php
                     }

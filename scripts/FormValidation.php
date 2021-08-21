@@ -7,6 +7,7 @@
             <div class="col-sm-9">
                 <div class="row result">
                 <!-- Code below -->
+                <div class="demo"></div>
                 <script>
                     try {
                         function validateForm() {
@@ -28,6 +29,7 @@
                     } catch(e) {
                         // statements
                         console.log(e);
+                        document.getElementById("demo").innerHTML = e;
                     }
                     
                 </script>

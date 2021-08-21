@@ -16,7 +16,7 @@
                         /**
                          * Object creation methods
                          */
-                        public function __construct()
+                        public function __construct()z
                         {
                             ?>
                             <!-- OBJECT CREATION METHOD ONE -->

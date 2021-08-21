@@ -32,13 +32,10 @@
 
             <script>
                 const Country = {
-
                     herName : "",
-
                     set CountryName(CountryName){
                         this.herName = CountryName.toUpperCase();
                     }
-                   
                 };
                 
                 Country.CountryName = "Bangladesh";
@@ -54,6 +51,7 @@
                     get getFullName() {
                         return this.firstName + " " + this.lastName;
                     },
+
                     set setFullName(value){
                         this.firstName = value.fn;
                         this.lastName = value.ln;
@@ -62,9 +60,11 @@
                 
                 Object.setFullName = {
                     fn: "Pew",
-                    ln: "Paul"
+                    ln: "Paul",
                 };
+
                 document.getElementById("herName2").innerHTML = Object.getFullName();
+
                 } catch(e) {
                     // statements
                     console.log(e);

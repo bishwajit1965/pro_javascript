@@ -36,7 +36,6 @@
 
                     // Getting the value
                     
-                    
                     var x = document.getElementById("demoTwo");
                     var y = x.value;
                     if (y == 0) {

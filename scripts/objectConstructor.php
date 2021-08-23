@@ -46,7 +46,7 @@
 
                             var MyDaughter = new Person("Arpita", "Paul", 23, "black", "student of Barishal University", "Bangladesh");
 
-                            document.getElementById("demo").innerHTML = "My daughter\'s age is " + MyDaughter.age + "." + ' She has ' + MyDaughter.eyeColor + ' eyes.' + ' she is a ' + MyDaughter.education + ' ' + ' and she is studying in ' + MyDaughter.subject + ' . '+ MyDaughter.name() + ' and she is a ' + MyDaughter.nationality + ' by birth.' + " She is " + MyDaughter.maritalStatus +'.' + "Shec is very " + MyDaughter.bonding +' to me .'+ " I " + MyDaughter.myReaction + ' ' +  MyDaughter.name();    
+                            document.getElementById("demo").innerHTML = "My daughter\'s age is " + MyDaughter.age + "." + ' She has ' + MyDaughter.eyeColor + ' eyes.' + ' she is a ' + MyDaughter.education + ' ' + ' and she is studying in ' + MyDaughter.subject + ' . '+ MyDaughter.name() + ' and she is a ' + MyDaughter.nationality + ' by birth.' + " She is " + MyDaughter.maritalStatus +'.' + "She is very " + MyDaughter.bonding +' to me .'+ " I " + MyDaughter.myReaction + ' ' +  MyDaughter.name();    
                             } catch(e) {
                                 document.getElementById("error").innerHTML=e;
                                 // statements

@@ -1,6 +1,7 @@
 <?php require_once '../partials/top.php';?>
     <!-- Code below -->
     <?php
+        echo "File path: " .__FILE__."<hr>";
     /**
      * Class declared
      */
@@ -11,8 +12,7 @@
          */
         public function __construct()
         {
-            echo "<h1>I am ObjectAccessor template</h1>";
-            ?>
+            echo "<h1>I am ObjectAccessor template</h1>"; ?>
             <p id="name"></p>
             <p id="herName"></p>
             <p id="herName2"></p>
@@ -27,7 +27,6 @@
                     }
                 };
                 document.getElementById("name").innerHTML = person.fullName;
-                
             </script>
 
             <script>
@@ -40,7 +39,6 @@
                 
                 Country.CountryName = "Bangladesh";
                 document.getElementById("herName").innerHTML = Country.herName;
-                
             </script>
             <script>
                 try {

@@ -139,11 +139,84 @@ class Arrays
             document.getElementById('demo10').innerHTML = Array.isArray(fruits);
             </script>
 
+            <!-- Multi dimensional array begins -->
+            <p class="message">Multidimensional Array</p>
+            <span class="output">Output : </span>
+            <script>
+                var array = [
+                    ['Mango', 'Banana', 'Jackfruit'],//1 
+                    ['Apple', 'Sapodila', 'Pineapple'],//2
+                    ['Jashore', 'Khulana', 'Dhaka'],//3
+                    ['Bangladesh', 'India', 'America'],//4
+                ];
+
+                // Tabular data display
+                document.write('<table border=1 class="table-one">');
+                document.write('<tr><td>#</td><td>Data1</td><td>Data2</td><td>Data3</td></tr>');
+                var k = 1;
+                for (var i = 0; i < array.length; i++) {
+                    document.write('<tr>');
+                        document.write('<td style="padding:10px;text-align:center;">' + k + '</td>');
+                        for (let j = 0; j < 3; j++) {
+                            document.write('<td>'+ array[i][j] +'</td>');
+                        }
+                        k++;
+                    document.write('</tr>'); 
+                }
+                document.write('</table>');      
+            </script>
+            <!-- Multi dimensional array ends -->
+
+            <!-- Array functions begins-->
+            <p class="message">Array functions</p>
+            <span class="output">Output : </span>
+            <!--pop(), push(), shift(), unshift(), splice(position,
+            length), indexOf(), Array.isArray(),
+            split(), join()-->
+            <script>
+                var array_one = ['Bangladesh', 'India', 'Srilanka'];
+                var array_two = ['Australia', 'Newzeland', 'Mayanmar'];
+                var stringData = 'My name is Bishwajit Paul';
+                var user = 'Bishwajit Paul';
+                // var newArray = array_one.concat(array_two);
+                // document.write(newArray);
+                // array_one.push('Nepal');
+                // array_one.pop();
+                // array_one.shift();
+                var arrayLength = array_one.length;
+                var arrayIndex = array_one.indexOf('India'); //Output:1
+                var testArray = Array.isArray(array_one);//Output:true
+                document.write(stringData.split(' '));//Will return an array
+                document.write('<br>');
+                document.write(array_one.join(','));//Bangladesh,India,Srilanka
+                // console.log(stringData.split(' '));
+                document.write('<br>');
+                var nameArr = user.split(' ');
+                document.write('Welcome'+ ' ' + nameArr[1]);
+            </script>
+            <!-- Array functions ends-->
+
+            <!-- Foreach loop begins -->
+            <p class="message">Foreach loop for array</p>
+            <span class="output">Output : </span>
+            <script>
+                var arrayData = ['Bangladesh', 'India', 'Canada', 'America', 'Bhutan', 'Nepal'];
+                // arrayData.forEach(function(value, index){
+                //     document.write(index +' '+ ' = ' , value + '<br/>')
+                // });
+
+                //Another way of doing the same thing
+                arrayData.forEach(arrayFunction);
+                function arrayFunction(val, index){
+                    document.write(index +' ' + ' = ' , val + '<br/>');
+                }
+            </script>
+            <!-- Foreach loop ends -->
         <?php
     }
 }
 
     // Class Instantiated
     new Arrays;
-    ?>
+?>
 <?php require_once '../partials/bottom.php';?>

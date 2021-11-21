@@ -12,8 +12,6 @@
         public function __construct()
         {
             echo "<h1>Random Practice Template</h1>"; ?>
-
-
             <p id="demo"></p>
             <p id="demoOne"></p>
             <p id="demoTwo"></p>
@@ -21,7 +19,6 @@
             <p id="demoFour"></p>
             <p id="demoFive"></p>
             <p id="demoSix"></p>
-
 
             <script>
                 var name = "Bishwajit Paul";
@@ -78,6 +75,7 @@
                 var x = personOne.fullName.call(personTwo);               
                 document.getElementById("demoThree").innerHTML = x;
             </script>
+
             <script>
                 var personOne = {
                     fullName : function() {

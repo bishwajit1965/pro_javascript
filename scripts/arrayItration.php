@@ -81,7 +81,8 @@
 
                 function functionFour(value, index, array){
                     return  value > 15;
-                } 
+                }
+
             </script>
 
 
@@ -170,7 +171,6 @@
 
             <p>This example check if some array values are larger than 18:</p>
             <p id="demoTen"></p>
-            
 
             <script>
                 const number11 = [12, 14, 15, 18, 20, 32, 45,65, 54];
@@ -184,9 +184,6 @@
                     return value > 18;
                 }
             </script>
-
-
-
             <!-- ###################################################### -->
             <?php
         }

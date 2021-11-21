@@ -17,7 +17,7 @@
                             <!-- DOCUMENT OBJECT MODEL CHANGED -->
                             <p id="demo"></p>
                             <script>
-                                document.getElementById("demo").innerHTML = "Hellow Bangladeh how are you?";
+                                document.getElementById("demo").innerHTML = "Hello Bangladesh how are you?";
                             </script>
 
                             <div class="trial">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
@@ -26,14 +26,14 @@
                             <p id="demo1"></p>
                             <script>
                                 var x = document.getElementsByClassName("trial");
-                                document.getElementById("demo1").innerHTML = 'Hellow' + x[1].innerHTML;
+                                document.getElementById("demo1").innerHTML = 'Hello' + x[1].innerHTML;
                             </script>
 
                             <?php
                         }
                     }
 
-                    //Class inastantiated
+                    //Class instantiated
                     new jsHtmlDom;
 
                     //Code above
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <?php include_once('../partials/_footer.php'); ?>
+        <?php include_once '../partials/_footer.php'; ?>
     </div>
 </body>
 </html>

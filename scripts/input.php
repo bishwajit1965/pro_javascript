@@ -11,8 +11,7 @@
          */
         public function __construct()
         {
-            echo "<h1>I am Input template</h1>";
-            ?>
+            echo "<h1>I am Input template</h1>"; ?>
             <p id="validationError"></p>   
             <form class="form" id="myForm">
                 <div class="form-row">
@@ -50,7 +49,7 @@
                             getFirstName.style.color = "#FFFFFF";
                             getFirstName.style.backgroundColor = "#13E76D";
                         } else {
-                            // document.write("Pattern mistacch");
+                            // document.write("Pattern mismatch");
                             getFirstName.style.backgroundColor = "#FF8888"; 
                         } 
                     }

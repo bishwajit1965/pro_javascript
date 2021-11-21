@@ -14,7 +14,7 @@
                         public function __construct()
                         {
                             ?>
-                        <!-- METHOD ONE OF FUNCTIO DECLARATION -->
+                        <!-- METHOD ONE OF FUNCTION DECLARATION -->
                             <?php echo "<h4><strong>(1) Method one of function declaration.</strong></h4>"; ?>
                         <p id="demo"></p>
                         <script>

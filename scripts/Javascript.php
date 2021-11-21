@@ -1,16 +1,21 @@
-<?php include_once '../partials/_head.php';?>
+<?php require_once '../partials/_head.php';?>
 <body>
     <div class="container">
-    <?php include_once '../partials/_header.php';?>
+    <?php require_once '../partials/_header.php';?>
         <div class="row">
-        <?php include_once '../partials/_sidebar.1.php';?>
+        <?php require_once '../partials/_sidebar.1.php';?>
             <div class="col-sm-9">
                 <div class="row result">
                 <!-- Code below -->
                 <?php
-
+                /**
+                 * Class javascript
+                 */
                 class Javascript
                 {
+                    /**
+                     * Constructor
+                     */
                     public function __construct()
                     {
                         ?>
@@ -58,7 +63,7 @@
                 </div>
             </div>
         </div>
-    <?php include_once '../partials/_footer.php';?>
+    <?php require_once '../partials/_footer.php';?>
     </div>
 </body>
 </html>

@@ -50,9 +50,7 @@
                     }
                     // Prototype used to add new property to the constructor
                     Person.prototype.eyeColor = 'black';
-
                     var myFather = new Person('Narayan', 'Chandra', 80, 'Bangladeshi', 'black');
-                    
                     document.getElementById('demo2').innerHTML = 'My father late '+ ' '+  myFather.firstName + ' '  + myFather.lastName + ' ' + '  is ' + ' ' + myFather.age + ' ' + 'years old and he is a ' + ' ' + myFather.nationality + ' ' + 'by birth.' + ' and his eyes are ' + myFather.eyeColor ;
                 } catch (error) {
                     document.getElementById('demo2').innerHTML = error.message;

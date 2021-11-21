@@ -12,7 +12,7 @@
         public function __construct()
         {
             echo "<h1>I am DocumentObjectModel template</h1>"; ?>
-            <div class="box">Bngaldesh</div>
+            <div class="box">Bangladesh</div>
             <div class="box">Pakistan</div>
             <p>This is a paragraph</p>
             <div>
@@ -182,7 +182,7 @@
                 })
             </script>
 
-            <!-- Adding diffrent event listerners simultaneously -->
+            <!-- Adding different event listeners simultaneously -->
             <button id="manyEvent">Many Event listeners</button>
             <p id="listener1"><span>1.</span>I am the first paragraph.</p>
             <p id="listener2"><span>2.</span>I am the second paragraph.</p>
@@ -195,7 +195,7 @@
                 x.addEventListener("click", ourFunction);
 
                 function myFunction(){
-                    let a = "1. Hello Bangladesh I lovre you a lot";
+                    let a = "1. Hello Bangladesh I love you a lot";
                     // alert("Hello one");
                     document.getElementById("listener1").innerHTML = a;
                 }
@@ -215,11 +215,11 @@
 
             
 
-            <!-- Another add event listner example -->
+            <!-- Another add event listener example -->
             <button id="manyEvents">Many Event listeners</button>
-            <p id="listenerOne"><span>1.</span>I am listner one paragraph.</p>
-            <p id="listenerTwo"><span>2.</span>I am listner two paragraph.</p>
-            <p id="listenerTYhree"><span>3.</span>I am listner three paragraph.</p>
+            <p id="listenerOne"><span>1.</span>I am listener one paragraph.</p>
+            <p id="listenerTwo"><span>2.</span>I am listener two paragraph.</p>
+            <p id="listenerThree"><span>3.</span>I am listener three paragraph.</p>
 
             <script>
                 let y = document.getElementById("manyEvents");
@@ -230,7 +230,7 @@
             </script>
             
 
-            <!-- Another add event listner example of adding parameter -->
+            <!-- Another add event listener example of adding parameter -->
             <button id="multiplyNum">Multiply/Add/Subtract</button>
             <p id="result"></p>
 
@@ -312,7 +312,6 @@
                 function removeData(){
                     try {
                         const parentData = document.getElementById("divOne");
-
                         const para = document.getElementById("paraOne");
                         const message = parentData.removeChild(para);
                         const deleteMessage = "Data has been removed";
